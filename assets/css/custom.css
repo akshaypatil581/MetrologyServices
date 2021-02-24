@@ -1,0 +1,152 @@
+.button-background {
+  background-color: blue;
+  border-color: blue;
+}
+.btn-secondary:hover {
+  color: wheat;
+  background-color: blue;
+  border-color: blue;
+}
+.custom-alert{
+  background-color: #f7f9fb;
+  border-color: #f7f9fb;
+}
+
+.custom-raq-subheader {
+  font-size: small;
+  margin-bottom: 1rem;
+}
+
+.w3l-bootstrap-header .navbar-toggler {
+    background-color: black;
+}
+.w3l-features-1 .icon span.fa {
+  color: #adadff;
+}
+
+.w3l-features-8 .top-right span.fa {
+    color: #adadff;
+}
+.w3l-footer-29-main .main-social-footer-29 a {
+    background: #adadff;
+}
+
+.w3l-contacts-2 .contact span.fa {
+  color: #adadff;
+}
+
+.w3l-contacts-2 .form-inner-cont input, .w3l-contacts-2 .form-inner-cont textarea {
+  border: 1px solid #adadff;
+}
+
+.w3l-feature-2 .icon span.fa {
+  color: #adadff;
+  border: 2px solid #adadff;
+}
+
+.w3l-footer-29-main #movetop {
+    background: blue;
+    color: white;
+}
+
+.icon-info {
+  display: flex;
+  align-items: center;
+}
+
+.company-info-headings {
+    border-bottom: 5px solid blue;
+    line-height: normal;
+}
+
+
+#site {
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+  #preloader {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+  #preloader:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    height: 100%;
+    width: 100%;
+    animation: rotation 1s linear infinite;
+    border: 1px solid #2fc394;
+    border-top: 1px solid transparent;
+    border-radius: 100%;
+  }
+  #preloader > .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 25px;
+    width: 10.6px;
+    margin-top: -12.5px;
+    margin-left: -5.3px;
+    animation: wink 1s ease-in-out infinite alternate;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    #preloader {
+      height: 60px;
+      width: 60px;
+      margin-top: -30px;
+      margin-left: -30px;
+    }
+    #preloader:before {
+      left: -2px;
+      top: -2px;
+      border-top-width: 2px;
+      border-left-width: 2px;
+      border-bottom-width: 2px;
+      border-right-width: 2px;
+    }
+    #preloader > .icon {
+      height: 37.5px;
+      width: 15.9px;
+      margin-top: -18.75px;
+      margin-left: -7.95px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    #preloader {
+      height: 80px;
+      width: 80px;
+      margin-top: -40px;
+      margin-left: -40px;
+    }
+    #preloader > .icon {
+      height: 50px;
+      width: 21.2px;
+      margin-top: -25px;
+      margin-left: -10.6px;
+    }
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  @keyframes wink {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

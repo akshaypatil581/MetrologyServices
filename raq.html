@@ -1,0 +1,313 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Metrology Services</title>
+  <!-- web fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+  <!-- //web fonts -->
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+  <div id="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
+    <img class="icon" src="assets/images/bolt.svg">
+  </div>
+  <main id="site" role="main">
+    <section class="w3l-bootstrap-header">
+      <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Metrology Services</a>
+          <!-- if logo is image enable this   
+    <a class="navbar-brand" href="#index.html">
+        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon fa fa-bars"></span>
+          </button>
+
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav text-right">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Equipment
+                </a>
+                <a href="#">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Gereral</a>
+                  <a class="dropdown-item" href="equipments/biomedical.html">Biomedical</a>
+                  <a class="dropdown-item" href="equipments/dialysis.html">Dialysis</a>
+                  <a class="dropdown-item" href="equipments/aviation.html">Aviaiton</a>
+                  <a class="dropdown-item" href="equipments/manufacturing.html">Manufacturing</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li>
+                <span class="d-inline-block text-white btn btn-secondary button-background"
+                  onclick="window.location='raq.html'">Request Quote</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="w3l-contact-breadcrum">
+      <div class="breadcrum-bg">
+        <div class="container py-5">
+          <p><a href="index.html">Home</a> &nbsp; / &nbsp; Request a Quote</p>
+          <h2 class="my-3">Request Quote</h2>
+          <!-- <p>Nulla dolorem perferendis inventore! posuere cubilia Curae; Nunc non risus in justo convallis feugiat. consectetur adipisicing elit.</p> -->
+        </div>
+      </div>
+    </section>
+    <!-- contact form -->
+    <section class="w3l-contacts-2" id="contact">
+      <div class="contacts-main">
+        <div class="contant11-top-bg py-5">
+        </div>
+        <div class="form-41-mian pb-5">
+          <div class="container pb-md-3">
+
+            <div class="d-grid">
+              <div class="form-inner-cont">
+                <h3 class="cont-head"> Request a Quote</h3>
+                <h6 class="custom-raq-subheader">Please complete the form below with full details. We will reply to your
+                  request at our earliest convenience. Thank You.</h6>
+                <form id="raqForm">
+                  <div class="top-inputs d-grid">
+                    <input type="text" placeholder="Company Name" name="w3lName" id="companyName" required="">
+                    <input type="text" name="Contact Person" placeholder="Contact Person" id="contactPersonName" required="">
+                  </div>
+                  <div class="top-inputs d-grid">
+                    <input type="text" placeholder="Phone Number" name="w3lName" id="phone" required="">
+                    <input type="email" name="email" placeholder="Email" id="email" required="">
+                  </div>
+                  <div class="alert alert-light custom-alert" role="alert">
+                    List your items for calibration service
+                  </div>
+                  <table class="table" id="csList">
+                    <thead>
+                      <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Manufacturer</th>
+                        <th scope="col">Model</th>
+                        <th scope="col">Qty</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                  </table>
+                  <div class="text-left">
+                    <button type="button" onclick="addItemClick();"
+                      class="text-white btn btn-secondary button-background">Add Item</button>
+                  </div>
+                  <div class="text-right">
+                    <button type="button" onClick="submitRAQ();"
+                      class="text-white btn btn-secondary button-background">Request a Quote</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="w3l-features-8">
+      <div class="features py-4" id="features">
+        <div class="container py-md-3">
+          <div class="heading text-center mx-auto">
+            <h3 class="head">Need Extra support</h3>
+            <p class="my-3 head">
+              For any substantial list of equipment, please email an excel spreadsheet containing manufacturer names,
+              quantities, and
+              model numbers to <a href="mailto:info@metrologyservices.com"
+                class="alert-link">info@metrologyservices.com</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w3l-footer-29-main" id="footer">
+      <div class="footer-29">
+        <div class="container pt-4">
+          <div class="d-grid grid-col-4 footer-top-29">
+            <div class="footer-list-29 footer-1">
+              <h6 class="footer-title-29">About Us</h6>
+              <ul>
+                <p>Tel: (562) 988-0277</p>
+                <p>Email: info@metrologyservices.com</p>
+                <p>Address: 3671 Industry Ave., Unit A5,</p>
+                <p>Lakewood, CA 90712 U.S.A.</p>
+              </ul>
+            </div>
+            <div class="footer-list-29 footer-2">
+              <ul>
+                <h6 class="footer-title-29">Useful Links</h6>
+                <li><a href="raq.html">Request Quote</a></li>
+                <li><a href="contact.html">Support</a></li>
+              </ul>
+            </div>
+            <div class="footer-list-29 footer-3">
+              <h6 class="footer-title-29">Services Area</h6>
+              <ul>
+                <p>Southern California, U.S.A.</p>
+              </ul>
+            </div>
+            <div class="footer-list-29 footer-4">
+              <ul>
+                <h6 class="footer-title-29">Quick Links</h6>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="bottom-copies text-center">
+            <p class="copy-footer-29">© 2020 metrologyservices. All rights reserved | Designed by <a
+                href="https://w3layouts.com">W3layouts</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- move top -->
+      <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-angle-up"></span>
+      </button>
+      <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction()
+        };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+          } else {
+            document.getElementById("movetop").style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+      <!-- /move top -->
+    </section>
+  </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
+
+<script>
+  window.itemNumber = 0;
+  $(document).ready(function () {
+    $('#csList').css({ "visibility": "hidden" });
+    $('#csList').css({ "display": "none" });
+  })
+  function preloader() {
+    var preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0";
+    preloader.setAttribute("aria-busy", "false");
+    document.getElementById("site").style.opacity = "1";
+  }
+  window.onload = preloader;
+
+  function addItemClick() {
+    $('#csList').css({ "visibility": "visible" });
+    $('#csList').css({ "display": "table" });
+    window.itemNumber++;
+    let table = $("#csList")[0];
+    let row = table.insertRow(window.itemNumber);
+    let itemNumberCell = row.insertCell(0);
+    let manufacturerCell = row.insertCell(1);
+    let modelCell = row.insertCell(2);
+    let qtyCell = row.insertCell(3);
+    itemNumberCell.innerHTML = window.itemNumber;
+    manufacturerCell.innerHTML = `<input type="text" class="form-control" placeholder="Manufacturer" id="manufacturer">`;
+    modelCell.innerHTML = `<input type="text" class="form-control" placeholder="Model" id="model">`;
+    qtyCell.innerHTML = `<input type="text" class="form-control" placeholder="Qty" id="qtyCell">`;
+  }
+
+  function submitRAQ() {
+    $('#raqForm').LoadingOverlay('show');
+    let companyName = $("#companyName").val();
+    let contactPersonName = $("#contactPersonName").val();
+    let email = $("#email").val();
+    let phone = $("#phone").val();
+    let tableData = tableToJson();
+    fetch(`https://metrologyservices.com/tenet/development/email/sendEmail.php?type=raq&companyName=${companyName}&contactPersonName=${contactPersonName}&email=${email}&phone=${phone}&tableData=${tableData}`)
+    .then(response => {
+      if (response == null) {
+        throw new Error("Error while sending mail");
+      }
+      return response.text();
+    }).then(data => {
+      alert("Thank you for contacting us, our team will get in touch with as soon as possible.");
+      $('#companyName').val("");
+      $('#contactPersonName').val("");
+      $('#email').val("");
+      $('#phone').val("");   
+      $('#csList').css({ "visibility": "hidden" });
+      $('#csList').css({ "display": "none" });
+      $('#raqForm').LoadingOverlay('hide');
+    }).catch(err => {
+      alert("Something went wrong, Please try again");
+      $('#raqForm').LoadingOverlay('hide');
+    });
+  }
+
+  function tableToJson() {
+    table = $("#csList")[0];
+    var rowData = [];
+    for (var i = 1; i < table.rows.length; i++) {
+      var tableRow = table.rows[i];
+      rowData.push({
+        "id": tableRow.cells[0].innerHTML,
+        "Manufacturer": tableRow.cells[1].children[0].value,
+        "Model": tableRow.cells[2].children[0].value,
+        "Qty": tableRow.cells[3].children[0].value,
+      })
+    }
+    return JSON.stringify(rowData);
+  }
+
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+
+</html>
